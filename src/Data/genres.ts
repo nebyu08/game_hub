@@ -501,7 +501,7 @@ export default [
       "games_count": 25063,
       "image_background": "https://media.rawg.io/media/games/19a/19a512a8c1293c22894b7364e1405ec1.jpg",
       "games": [
-        {
+          {
           "id": 3272,
           "slug": "rocket-league",
           "name": "Rocket League",
