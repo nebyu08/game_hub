@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, HStack, Show } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, HStack, Show } from "@chakra-ui/react";
 import NabBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
 import GenreList from "./components/GenreList";
@@ -61,7 +61,9 @@ function App() {
             />
           </HStack>
           <GameGrid gameQuery={gameQuery} />
+          
         </Box>
+       
       </GridItem>
     </Grid>
   );
