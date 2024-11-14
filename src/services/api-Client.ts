@@ -4,6 +4,11 @@ import axios from "axios";
 
 //const api_key=import.meta.env.api_key
 
+export interface FetchResponse<T>{
+    count:number;
+    results:T[];
+}
+
 export default axios.create({
     baseURL:'https://api.rawg.io/api',
     params:{
