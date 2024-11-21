@@ -1,24 +1,19 @@
 import { Box, Button, SimpleGrid, Text } from "@chakra-ui/react";
+import React from "react";
 import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
-import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
-import { GameQuery } from "../App";
-import React from "react";
+import GameCardSkeleton from "./GameCardSkeleton";
 
-interface Props {
-  gameQuery: GameQuery;
-}
 
-function GameGrid({ gameQuery }: Props) {
+function GameGrid() {
   const {
     data,
     error,
     isLoading,
-    isFetchingNextPage,
     fetchNextPage,
     hasNextPage,
-  } = useGames(gameQuery || {});
+  } = useGames();
   // console.log(typeof data);
   const skeletons = [];
 
